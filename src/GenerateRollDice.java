@@ -8,6 +8,11 @@ public class GenerateRollDice {
 		
 
 		char runApp = 'y';
+		
+		
+		
+		
+		
 		while (runApp == 'y') {
 			System.out.println("Enter number of sides for dice 1:");
 
@@ -15,6 +20,9 @@ public class GenerateRollDice {
 			System.out.println("Enter number of sides for dice 2:");
 			int side2 = scnr.nextInt();
 
+			System.out.println( generateRandomDieRoll(side1));
+			System.out.println(generateRandomDieRoll(side2));
+					
 			int point = generateRandomDieRoll(side1) + generateRandomDieRoll(side2);
 			System.out.println("Your point is:" + point);
 			if (point == 12 || point == 3 || point == 2) {
